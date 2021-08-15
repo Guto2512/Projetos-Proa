@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Entrevista</title>
+
+    <style>
+       
+       body{
+           background-color: rgb(25, 126, 241);
+       }
+       table, fieldset{
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+ <body>
+<center>
+    
+    <h1>Entrevista com meu idolo</h1>
+
+    <form>
+
+<table border="1" cellpadding='40' width='600'
+
+<tr>
+    <td colspan='2' align="left">
+        <label for="hoje">Quando é seu aniversário?</label>
+        <input type="date" id="hoje" name="hoje" value="" min="1970-01-01" max="2021-12-31">
+    </td>
+</tr>
+
+
+<tr>
+    <td>
+        <label>Qual sua melhor lembrança de criança?</label>
+    </td>
+    <td>
+        <textarea id='texto' name='texto'>Responda com sabedoria</textarea>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p> O que você prefere?</p>
+    </td>
+    <td>
+        <input type="radio" id="blueberry" name="comida" value="blueberry" checked>
+        <label for="blueberry">Blueberry</label>
+
+        <input type="radio" id="pizza" name="comida" value="pizza">
+        <label for="pizza">Pizza</label>
+    </td>                    
+</tr>
+
+<td>
+    <label>Você prefere ser rico, mas nunca poder viajar ou ser pobre e poder viajar pra qualquer lugar quando der?</label>
+</td>
+<td>
+    <select name='ler'>
+        <option value='0' disabled>Selecione</option>
+        <option value='1'>Ser rico</option>
+        <option value='2'>Ser pobre</option>
+    </select>
+</td>
+</tr>
+
+<td>
+    <label>Ser o autor de uma grande história ou o personsagem de uma grande história?</label>
+</td>
+<td>
+    <select>
+        <option>Autor</option>
+        <option>Personsagem</option>
+    </select>
+</td>
+</tr>
+
+</tr>
+<tr>
+    <td colspan='2' align="center">
+        <input type="range" id="volume" name="volume" min="1" max="10">
+        <label for="volume">Quanto você gostou do formulário?</label>
+    </td>
+
+    <tr>
+        <td>
+            <label for="avatar">Escolha uma foto sua:</label></td>
+        <td>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        </td>
+    </tr>
+
+</table>
+
+<fieldset>
+            
+    <legend>Clique para enviar </legend>
+    <input type="submit" value="Submeter">
+
+</fieldset>
+
+ </form>  
+</center>   
+</body>
+</html>
