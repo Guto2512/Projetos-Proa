@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <style>
+*{
+    margin: 0;
+    border: 0;
+}
+
+.bloco{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#oqueé{
+    background-color: #7fbd42;
+}
+
+#porqueusar{
+    background-color: #69f;
+}
+
+#exemplo{
+    background-color: #faa;
+}
+
+.links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.links label{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 100%;
+    color: #fff;
+}
+
+.links label:hover{
+    background-color: rgba(255, 255, 255,.2) ;
+}
+
+.scroll input{
+display: none;
+}
+
+.scroll{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sections{
+    transition: all .4s;
+}
+
+#rd_porqueusar:checked ~ .sections{
+ margin-top: -100vh;
+}
+
+#rd_exemplo:checked ~ .sections{
+    margin-top: -200vh;
+}
+
+h1{
+    color: white;
+    font-family: 'Arial';
+    font-size: 30px;
+    margin-inline-end: 800px;
+    margin-bottom: 35%;
+    position:fixed;
+    
+}
+
+h3{
+    color: white;
+    text-align: start;
+    font-family: "Arial";
+    font-size: 18px;
+    margin-bottom: 22%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+    </style>
+    </head>
+
+<body>
+    <nav class="links">
+        <label for="rd_oqueé">Oque é?</label>
+        <label for="rd_porqueusar">Por que usar?</label>
+        <label for="rd_exemplo">Exemplo</label>
+    </nav>
+
+    <div class="scroll">
+        <input type="radio" name="grupo" id="rd_oqueé" checked="true">
+        <input type="radio" name="grupo" id="rd_porqueusar">
+        <input type="radio" name="grupo" id="rd_exemplo">
+         
+        <section class="sections">
+            <section class="bloco" id="oqueé">
+                <h1>O que são Landing Pages?</h1>
+                <h3>Landing Pages, também conhecidas como página de destino, têm como foco principal a conversão dos visitantes. São páginas com poucos elementos e focadas em um apenas CTA principal, evitando distrações e garantindo a conversão desejada. Para isso, são criadas páginas específicas, que deixam de lado elementos que possam distrair a atenção do usuário, como menu, excesso de texto ou outras informações que são dispensáveis dentro do objetivo que é: fazer com que o usuário realize uma ação.</h3>
+            </section>
+           
+             <section class="bloco" id="porqueusar">
+                <h1>Por que usar uma Landing Page?</h1>
+                <h3>Quando se decide investir em anúncios, seja no Facebook ou nas ferramentas de busca, é fundamental que o usuário seja levado para uma landing page. É uma página de entrada por onde o novo visitante chega ao site após clicar em um link patrocinado, ou em no resultado das ferramentas de busca. Essa estratégia otimiza as conversões e a geração de leads, aumentando o número de vendas. Mas não é o único objetivo. Abaixo explicamos quando e porque você deve usar uma landing page.</h3>
+            </section>
+            
+            <section class="bloco" id="exemplo">
+              <h1>Exemplo</h1>
+                <img src="imagens/login2.png" width="400" height="500">
+            </section>
+
+    </div>
+
+</body>
+</html>
